@@ -1,0 +1,1 @@
+export const URL_PREASIGNADA = 'https://jsonplaceholder.typicode.com/posts/1'

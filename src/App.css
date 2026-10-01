@@ -1,0 +1,90 @@
+.contenedor {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  text-align: center;
+  font-family: system-ui, sans-serif;
+}
+
+h1 {
+  font-size: 1.6rem;
+  color: #1e3a8a;
+}
+
+button {
+  background: #1e3a8a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.cargando {
+  margin-top: 24px;
+}
+
+.spinner {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border: 4px solid #cbd5e1;
+  border-top-color: #1e3a8a;
+  border-radius: 50%;
+  animation: girar 0.8s linear infinite;
+}
+
+@keyframes girar {
+  to { transform: rotate(360deg); }
+}
+
+.error {
+  margin-top: 24px;
+  padding: 12px;
+  background: #fee2e2;
+  color: #991b1b;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.respuesta {
+  margin-top: 24px;
+  text-align: left;
+}
+
+.respuesta pre {
+  background: #f1f5f9;
+  color: #0f172a;
+  padding: 12px;
+  border-radius: 8px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.tabla th,
+.tabla td {
+  padding: 8px;
+  border-bottom: 1px solid #e2e8f0;
+  vertical-align: top;
+  word-break: break-word;
+}
+
+.tabla th {
+  width: 30%;
+  text-align: left;
+  color: #1e3a8a;
+}
