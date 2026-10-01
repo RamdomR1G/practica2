@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { URL_PREASIGNADA } from './config'
 import './App.css'
 
-// PASO 3: Procesamiento de la respuesta.
 // Convierte un objeto JSON en una lista de pares campo/valor.
 function procesarJSON(datos) {
   const objeto = Array.isArray(datos) ? datos[0] : datos
@@ -24,7 +23,7 @@ function App() {
     setTexto('')
 
     try {
-      // PASO 2: Solicitud HTTP (GET) a la URL preasignada (PASO 1)
+      // Solicitud HTTP (GET) a la URL preasignada (PASO 1)
       const res = await fetch(URL_PREASIGNADA, { cache: 'no-store' })
       if (!res.ok) throw new Error(`HTTP ${res.status}`)
 
